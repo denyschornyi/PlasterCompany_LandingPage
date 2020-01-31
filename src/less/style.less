@@ -103,7 +103,8 @@ section{
             .bold();
             font-size: 4rem;
             line-height: 1.45;
-            text-transform: uppercase;
+            text-transform : uppercase;
+        
         }  
     }
     &-subtitle{
@@ -168,7 +169,7 @@ section{
             margin-top: 1.5rem;
         }
         }
-    }  
+}
 
 
 .wrap{
@@ -244,9 +245,14 @@ section{
 
 .price{
     background: @icons-color url(../img/prices/prices-bg.jpg) center repeat ;
+    .section-header{
+        margin: 0;
+    }
     &-header-btn{
         margin: 2.5rem;
-        float: right;
+    }
+    &-button{
+        text-align: center;
     }
     /*Оформление карточки с тарифами*/
     &-block{
@@ -255,6 +261,7 @@ section{
         background-color: @light;
         box-shadow: 7px 12px 21px 0px rgba(0,0,0, 0.17);
         text-align: center;
+        margin-top: 2rem;
         h4{
             margin: 2rem 0;
             .bold();
@@ -348,6 +355,22 @@ section{
     .main-title{
         text-align: center;
         padding-bottom: 3rem;
+    }
+    .price{
+        &-button{
+            text-align: center;
+            padding: 2rem 0;
+        }
+        &-header-btn{
+            margin-top: 0;
+            margin-bottom: 2rem;
+        }
+        &-block{
+            margin-top: 2rem;
+        }
+    }
+    .section-header_light{
+        margin: 0;
     }
 }
 

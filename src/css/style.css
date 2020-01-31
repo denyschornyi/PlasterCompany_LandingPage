@@ -208,9 +208,14 @@ section {
   background: #48bd15 url(../img/prices/prices-bg.jpg) center repeat;
   /*Оформление карточки с тарифами*/
 }
+.price .section-header {
+  margin: 0;
+}
 .price-header-btn {
   margin: 2.5rem;
-  float: right;
+}
+.price-button {
+  text-align: center;
 }
 .price-block {
   padding: 2rem 3rem 4rem;
@@ -218,6 +223,7 @@ section {
   background-color: #ffffff;
   box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
   text-align: center;
+  margin-top: 2rem;
 }
 .price-block h4 {
   margin: 2rem 0;
@@ -306,6 +312,20 @@ section {
   .main-title {
     text-align: center;
     padding-bottom: 3rem;
+  }
+  .price-button {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  .price-header-btn {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  .price-block {
+    margin-top: 2rem;
+  }
+  .section-header_light {
+    margin: 0;
   }
 }
 @media (max-width: 767px) {
