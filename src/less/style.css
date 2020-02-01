@@ -35,7 +35,7 @@ a:focus {
   border-radius: 8px;
   font-size: 1.1rem;
   background-color: #f9b002;
-  color: #ffffff;
+  color: #fff;
   text-transform: uppercase;
   border: none;
   transition: all 0.2s;
@@ -53,7 +53,7 @@ section {
   text-align: center;
 }
 .section-header_light {
-  color: #ffffff;
+  color: #fff;
 }
 .section-header h2 {
   font-family: 'ProximaNova_bold', sans-serif;
@@ -65,7 +65,7 @@ section {
 /*Main*/
 .main {
   padding: 3rem 0;
-  background: #ffffff url(../img/main-bg.jpg) center center no-repeat;
+  background: #fff url(../img/main-bg.jpg) center center no-repeat;
   background-size: cover;
 }
 .main-content {
@@ -87,7 +87,7 @@ section {
   display: inline-block;
   padding: 2rem 4rem;
   font-size: 1.8rem;
-  color: #ffffff;
+  color: #fff;
   background-color: #48bd15;
   text-align: center;
 }
@@ -103,7 +103,7 @@ section {
   text-transform: uppercase;
 }
 .main-form {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 4rem 5rem;
   text-align: center;
 }
@@ -128,7 +128,7 @@ section {
   transform: translateX(-50%) translateY(-50%);
   padding: 0.5rem;
   font-size: 1.3rem;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .main-form-btn {
   display: block;
@@ -220,7 +220,7 @@ section {
 .price-block {
   padding: 2rem 3rem 4rem;
   min-height: 50rem;
-  background-color: #ffffff;
+  background-color: #fff;
   box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
   text-align: center;
   margin-top: 2rem;
@@ -285,14 +285,14 @@ section {
   left: 4rem;
   width: 2rem;
   height: 2rem;
-  background-color: #ffffff;
+  background-color: #fff;
   border: 2px solid #48bd15;
   border-bottom: none;
   border-top-right-radius: 100px;
 }
 .feedback-slider {
   padding: 5rem 6rem;
-  background-color: #ffffff;
+  background-color: #fff;
   box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.17);
 }
 .feedback-slider .media {
@@ -349,7 +349,7 @@ section {
   border: none;
   background-color: transparent;
   font-size: 3rem;
-  color: #ffffff;
+  color: #fff;
 }
 .popup-content {
   position: fixed;
@@ -357,7 +357,7 @@ section {
   transform: translateX(-50%);
   top: 10%;
   padding: 4rem 6rem;
-  background-color: #ffffff;
+  background-color: #fff;
   text-align: center;
 }
 @media (max-width: 991px) {
