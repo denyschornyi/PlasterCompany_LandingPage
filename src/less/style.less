@@ -68,7 +68,33 @@ button , input ,textarea, a{
         background-color: darken(@btn-color , 5%);
     }
 }
-
+/* Form decoration*/
+.form{
+    &-input{
+        display: block;
+        width: 100%;
+        padding: 1.5rem;
+        margin: 2rem 0;
+        border: 1px solid @border-input;
+        border-radius: 5px;
+    }
+    
+    label{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        .reg();
+        padding: 0.5rem;
+        font-size: 1.3rem;
+        background-color: @light;  
+    }
+    &-btn{
+        display: block;
+        width: 100%;
+        height: 5rem;
+        font-size: 1.6rem;
+    }
+}
 /*Typography*/
 
 section{
@@ -141,29 +167,6 @@ section{
                 font-size: 1.8rem;
             }
         }
-        &-input{
-            display: block;
-            width: 100%;
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border: 1px solid @border-input;
-            border-radius: 5px;
-        }
-        
-        label{
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%) translateY(-50%);
-            padding: 0.5rem;
-            font-size: 1.3rem;
-            background-color: @light;  
-        }
-        &-btn{
-            display: block;
-            width: 100%;
-            height: 5rem;
-            font-size: 1.6rem;
-        }
         small{
             display: block;
             margin-top: 1.5rem;
@@ -195,6 +198,10 @@ section{
 
 /*Оформления секции с преимуществами*/
 .features{
+    h2{
+        .bold();
+        font-size: 3.6rem;
+    }
     &-block{
         text-align: center;
         h3{
@@ -304,6 +311,7 @@ section{
 
 /* Section feedback*/
 .feedback{
+    position: relative;
     background: url(../img/feedback/feedback-bg.png) no-repeat center;
     background-size: cover;
     &-prev-btn{
@@ -363,6 +371,32 @@ section{
             }
         }
     }
+    &-form{
+        margin-top: 6rem;
+        padding: 5rem 10rem;
+        background-color: @light;
+        text-align: center;
+        margin-bottom: 1rem;
+        h3{
+            .bold();
+            font-size: 2.2rem;
+        }
+        label{
+            transform: translate(-50%, 20%);
+        }
+        
+    }
+    &-btn{
+        max-width: 25rem;
+        margin: auto;
+    }
+}
+
+.hand{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 30rem;
 }
 
 /*Оформление модальных окон*/
@@ -406,6 +440,17 @@ section{
         
     }
 }
+
+@media (max-width:1199px){
+    .feedback{
+        padding: 3rem 5rem;
+    }
+    .fotorama{
+       margin-bottom: 3rem; 
+    }
+
+}
+
 @media (max-width:991px){
     .main{
         background-position: top right;
@@ -436,6 +481,16 @@ section{
     .section-header_light{
         margin: 0;
     }
+    .feedback{
+        &-form{
+            label{
+                transform: translate(-50%,-50%)
+            }
+        }
+    }
+    .hand{
+        display: none;
+    }
 }
 
 @media (max-width:767px){
@@ -447,5 +502,20 @@ section{
     }
     .wrap-block{
         text-align: center;
+    }
+    .features{
+        &-block{
+            p{
+                width: 60%;
+            }
+        }
+    }
+    .feedback{
+        &-prev-btn{
+            left: 0;
+        }
+        &-next-btn{
+            right:0;
+        }
     }
 }

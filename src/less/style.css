@@ -44,6 +44,30 @@ a:focus {
   cursor: pointer;
   background-color: #e09e02;
 }
+/* Form decoration*/
+.form-input {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+.form label {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family: 'ProximaNova_reg', sans-serif;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  background-color: #fff;
+}
+.form-btn {
+  display: block;
+  width: 100%;
+  height: 5rem;
+  font-size: 1.6rem;
+}
 /*Typography*/
 section {
   padding: 10rem 0;
@@ -114,28 +138,6 @@ section {
 .main-form-header strong {
   font-size: 1.8rem;
 }
-.main-form-input {
-  display: block;
-  width: 100%;
-  padding: 1.5rem;
-  margin: 2rem 0;
-  border: 1px solid #dddddd;
-  border-radius: 5px;
-}
-.main-form label {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  padding: 0.5rem;
-  font-size: 1.3rem;
-  background-color: #fff;
-}
-.main-form-btn {
-  display: block;
-  width: 100%;
-  height: 5rem;
-  font-size: 1.6rem;
-}
 .main-form small {
   display: block;
   margin-top: 1.5rem;
@@ -160,6 +162,10 @@ section {
   text-align: right;
 }
 /*Оформления секции с преимуществами*/
+.features h2 {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 3.6rem;
+}
 .features-block {
   text-align: center;
 }
@@ -261,6 +267,7 @@ section {
 }
 /* Section feedback*/
 .feedback {
+  position: relative;
   background: url(../img/feedback/feedback-bg.png) no-repeat center;
   background-size: cover;
 }
@@ -320,6 +327,30 @@ section {
 .feedback-slider-btn img {
   width: 50%;
 }
+.feedback-form {
+  margin-top: 6rem;
+  padding: 5rem 10rem;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.feedback-form h3 {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 2.2rem;
+}
+.feedback-form label {
+  transform: translate(-50%, 20%);
+}
+.feedback-btn {
+  max-width: 25rem;
+  margin: auto;
+}
+.hand {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 30rem;
+}
 /*Оформление модальных окон*/
 .popup {
   display: none;
@@ -360,6 +391,14 @@ section {
   background-color: #fff;
   text-align: center;
 }
+@media (max-width: 1199px) {
+  .feedback {
+    padding: 3rem 5rem;
+  }
+  .fotorama {
+    margin-bottom: 3rem;
+  }
+}
 @media (max-width: 991px) {
   .main {
     background-position: top right;
@@ -388,6 +427,12 @@ section {
   .section-header_light {
     margin: 0;
   }
+  .feedback-form label {
+    transform: translate(-50%, -50%);
+  }
+  .hand {
+    display: none;
+  }
 }
 @media (max-width: 767px) {
   .main {
@@ -398,5 +443,14 @@ section {
   }
   .wrap-block {
     text-align: center;
+  }
+  .features-block p {
+    width: 60%;
+  }
+  .feedback-prev-btn {
+    left: 0;
+  }
+  .feedback-next-btn {
+    right: 0;
   }
 }
