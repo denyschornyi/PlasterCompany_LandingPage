@@ -353,7 +353,7 @@ section {
 }
 /* Scheme block*/
 .scheme {
-  background: #fff url(../img/scheme/scheme-bg.png) bottom right -25rem no-repeat;
+  background: #fff url(../img/scheme/scheme-bg.png) bottom -11rem right -10rem no-repeat;
   background-size: 70rem;
 }
 .scheme-block {
@@ -364,12 +364,19 @@ section {
   font-family: 'ProximaNova_bold', sans-serif;
 }
 /* All inclusive block*/
+.all-inclusive {
+  background: #f5f5f5;
+}
 .all-inclusive .media {
+  min-height: 10rem;
   font-size: 1.3rem;
 }
 .all-inclusive .media h4 {
   font-family: 'ProximaNova_bold', sans-serif;
   font-size: 1.6rem;
+}
+.all-inclusive .media p {
+  font-size: 1.1rem;
 }
 .circle {
   display: inline-block;
