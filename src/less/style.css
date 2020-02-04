@@ -456,6 +456,43 @@ section {
   background: url(../img/problem/checked-problem.png) center no-repeat;
   background-size: 70%;
 }
+/*Materials block*/
+.materials {
+  background: url(../img/material/materials-bg.png) no-repeat center;
+  background-size: cover;
+}
+.materials-slider {
+  padding-top: 5rem;
+}
+.materials-block-p {
+  width: 100% !important;
+}
+.materials-link {
+  text-align: center;
+  display: inline-block;
+  color: #48bd15;
+  border-bottom: 1px dotted #48bd15;
+}
+.materials-link:hover {
+  color: #378f10;
+}
+.materials img {
+  display: block;
+  margin: 0 auto;
+}
+.materials-offer {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+/*  Tour */
+.tour {
+  background: #f5f5f5 url(../img/tour/tour-bg.png) center no-repeat;
+  background-size: cover;
+}
+.tour-subtitle {
+  font-size: 2rem;
+}
 /*Оформление модальных окон*/
 .popup {
   display: none;

@@ -39,6 +39,7 @@
 @light: #fff;
 @border-input: #dddddd;
 @problems-color: #e8e8e8;
+@upsell-bg: #286b02;
 /*Basic setting*/
 html{
     font-size: 10px;
@@ -512,6 +513,49 @@ section{
                 background-size: 70%;
             } 
         }
+    }
+}
+
+/*Materials block*/
+.materials{
+    background: url(../img/material/materials-bg.png) no-repeat center;
+    background-size: cover; 
+    &-slider{
+        padding-top: 5rem;
+    }
+    &-block{
+        &-p{
+            width: 100% !important;
+        }
+    }
+    &-link{
+        text-align: center;
+        display: inline-block;
+        color: @icons-color;
+        border-bottom: 1px dotted @icons-color;
+        &:hover{
+            color: darken(@icons-color, 10%);
+        }
+    }
+    img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    &-offer{
+        margin-top: 4rem;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+
+/*  Tour */
+.tour{
+    background: @bg-light url(../img/tour/tour-bg.png) center no-repeat;
+    background-size: cover; 
+
+    &-subtitle{
+        font-size: 2rem;
     }
 }
 
