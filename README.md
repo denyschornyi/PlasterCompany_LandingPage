@@ -1,4 +1,4 @@
-# PlasterCompany_LandingPage
+# Plaster Company Landing Page
 Work on real psd maket from russian freelance to do a landing page about  Automated Wall Plaster. In this project I using HTML, CSS, LESS, Twitter Bootstrap, Slick.js( Slick slider) and also JQuery.
 
 
